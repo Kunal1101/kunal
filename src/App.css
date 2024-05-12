@@ -12,6 +12,9 @@ body {
   font-family: "Inter", sans-serif;
   letter-spacing: 2px;
 }
+p {
+  margin-bottom: 0px !important;
+}
 a,span,p {
   color: var(--light-gray);
   text-decoration: none;
@@ -60,13 +63,6 @@ button:focus:not(:focus-visible) {
   height: 85px;
   border-radius: 50px;
 }
-.HomeDescription h1 {
-  font-size: 32px;
-}
-.HomeDescription p {
-  font-size: 17px;
-  line-height: 28px;
-}
 .homeProjects a {
   background-image: linear-gradient(90deg, #80D0F2 0%, #5C82FF 50%, #C480FF 100%);
   background-size: 100%;
@@ -92,34 +88,15 @@ marquee .marquee_img {
   padding: 0;
 }
 .project-card img {
-  width: 200px;
   border-radius: 8px;
 }
-.project-card::before {
-  content: "";
-  border-radius: 16px;
-  display: block;
-  position: absolute;
-  z-index: -1;
-  inset: -2px;
-  opacity: 0;
-  transform: scale(0.8);
-}
-.project-card:hover::before {
-  opacity: 1;
-  background: var(--hover-bg);
-  transition: all 333ms ease 0s;
-  transform: scale(1);
-}
+
 .project-card .project_des {
   opacity: .6;
 }
 .userInputBox {
-  background-image:  url("../src/Assests/chat.png"), var(--hover-bg);
-  padding: 40px 30px 20px;
-  border-radius: 20px;
-  margin-top: 80px;
   background-size: contain;
+  border-radius: 20px;
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -131,7 +108,6 @@ marquee .marquee_img {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
-  font-size: 40px;
   display: inline-block;
 }
 .socialLinks svg {
@@ -150,7 +126,6 @@ marquee .marquee_img {
   line-height: 30px;
   font-weight: 400;
   color: #F2F2EE;
-  max-width: 60%;
 }
 .userInputBox .meetingBtn {
   padding: 8px 20px;
@@ -164,25 +139,99 @@ marquee .marquee_img {
   background-image: linear-gradient(73.19deg,#DC79FF 0%,#256BFA 95.06%);
 }
 /* Media query */
-
+@media screen and (max-width: 575px) {
+  .userInputBox {
+    background-image: var(--hover-bg), url("../src/Assests/chat.png");
+  }
+  .HomeDescription h1 {
+    font-size: 28px;
+  }
+  .HomeDescription p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .project-card img {
+    width: 100px;
+    height: 100px;
+  }
+  .project-card .project_des {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .userInputBox .description {
+    max-width: 60%;
+  }
+  .project-card img {
+    width: 200px;
+  }
+  .userInputBox {
+    background-image:  url("../src/Assests/chat.png"), var(--hover-bg);
+  }
+  .HomeDescription h1 {
+    font-size: 32px;
+  }
+  .HomeDescription p {
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
 @media screen and (max-width: 767px) {
   .navbar  {
     margin-bottom: 50px;
+    width: 90%;
   }
   .container-custom {
     padding: 0px 20px;
   }
+  .overflow-md {
+    overflow-x: scroll;
+  }
+  .userInputBox {
+    padding: 30px 16px 20px;
+    margin-top: 40px;
+  }
+  .userInputBox h2 {
+    font-size: 30px;
+  }
   .project-card {
-    width: 210px;
-    margin: 0px auto;;
+    background: var(--hover-bg);
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   .container-custom {
     width: 710px;
   }
+  .project-card::before {
+    content: "";
+    border-radius: 16px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    inset: -2px;
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  .project-card:hover::before {
+    opacity: 1;
+    background: var(--hover-bg);
+    transition: all 333ms ease 0s;
+    transform: scale(1);
+  }
+  .userInputBox {
+    padding: 40px 30px 20px;
+    margin-top: 80px;
+  }
   .navbar  {
     margin-bottom: 80px;
+  }
+  .userInputBox h2 {
+    font-size: 40px;
+  }
+  .project-card {
+    width: min-content;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {

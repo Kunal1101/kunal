@@ -14,14 +14,14 @@ const CurrentProjects = () => {
       id: 1,
       projectImg: projectOne,
       projectName: "CedCommerce",
-      // projectDescription: "djvidov0dhvpifv0",
+      projectDescription: "eCommerce platform and marketplace integrator",
       projectLink : "https://cedcommerce.com/"
     },
     {
       id: 2,
       projectImg: projectTwo,
       projectName: "Bansal College",
-      // projectDescription: "djvidov0dhvpifv0",
+      projectDescription: "Engineering College",
       projectLink : "https://www.bansaliet.in/"
 
     },
@@ -29,28 +29,28 @@ const CurrentProjects = () => {
       id: 3,
       projectImg: projectThree,
       projectName: "Health Foundation",
-      // projectDescription: "djvidov0dhvpifv0",
+      projectDescription: "NGO for women and migratory workers",
       projectLink : "https://healthvalueshowbiz.in/"
     },
     {
       id: 4,
       projectImg: projectFour,
       projectName: "Bazoob",
-      // projectDescription: "djvidov0dhvpifv0",
+      projectDescription: "Influencer marketing Service",
       projectLink : "https://bazoob.com/home"
     },
     {
       id: 5,
       projectImg: projectFive,
       projectName: "Chadkhans",
-      // projectDescription: "djvidov0dhvpifv0",
+      projectDescription: "Textile company",
       projectLink : "https://www.chadkhans.com/"
     },
     {
       id: 6,
       projectImg: projectSix,
       projectName: "Hotel Aarya",
-      // projectDescription: "djvidov0dhvpifv0",
+      projectDescription: "Tailored Resort Retreats Online",
       projectLink : "https://hotelaarya.in/"
     },
   ]
@@ -66,13 +66,13 @@ const CurrentProjects = () => {
         <div className='d-flex flex-wrap gap-3'>
           {
             items.map((item)=>(
-              <div className='project-card position-relative d-flex flex-column' key={item.id}>
-                <a onClick={() => {  window.location.href = (item.projectLink)}} target='_blank' rel='noopener norefer'>
-                  <img src={item.projectImg} alt='' className='projectImg' />
-                  <span className='text-white my-3 d-block'>{item.projectName}</span>
-                  <p  className='text-white project_des'>{item.projectDescription}</p>
+                <a className='project-card position-relative d-flex flex-md-column gap-3'  key={item.id} onClick={() => {  window.location.href = (item.projectLink)}} target='_blank' rel='noopener norefer'>
+                  <img src={item.projectImg} alt='' className='projectImg d-block' />
+                  <div>
+                    <span className='text-white mb-3 mb-md-0 my-md-3 d-block'>{item.projectName}</span>
+                    <p  className='text-white project_des'>{item.projectDescription}</p>
+                  </div>
                 </a>
-              </div>
             ))
           }
         </div>

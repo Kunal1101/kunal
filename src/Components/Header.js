@@ -8,7 +8,7 @@ import logo from "../Assests/logo_.png"
 function Header() {
   return (
     <>
-      <nav className="mt-md-4 navbar navbar-expand-sm">
+      <nav className="mt-4 navbar navbar-expand-sm">
         <div className="container-fluid">
           <a className="navbar-brand text-white me-4" href="/"><img src={logo} alt='' width={40} /></a>
           <button className="border-none navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
