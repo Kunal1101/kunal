@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import CurrentProjects from './Components/projects/CurrentProjects';
+import Header from './Components/Header';
+import HomeDescription from './Components/HomeDescription';
+import Marquee from './Components/Marquee';
+import UserInputBox from './Components/UserInputBox';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='main-container position-relative'>
+      <Header />
+      <div className='container-custom mx-auto'>
+        <HomeDescription />
+        {/* <Marquee /> */}
+        <CurrentProjects />
+        <UserInputBox />
+      </div>
+    </main>
   );
 }
 
