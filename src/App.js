@@ -8,6 +8,7 @@ import{
 } from "react-router-dom"
 import HomePage from './Components/pages/HomePage';
 import WorkPage from './Components/pages/WorkPage';
+import AboutMe from './Components/pages/AboutMe';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
             <Routes>
               <Route exact path="/" element={<HomePage/>}/>
               <Route exact path="/work" element={<WorkPage/>}/>
+              <Route exact path="/about" element={<AboutMe/>}/>
             </Routes>
         </Router>
         </div>

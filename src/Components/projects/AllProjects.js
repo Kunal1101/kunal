@@ -6,6 +6,9 @@ import projectFour from "../../Assests/project_four.png"
 import projectFive from "../../Assests/project_five.png"
 import projectSix from "../../Assests/project_six.png"
 import projectSeven from "../../Assests/project_seven.png"
+import projectEight from "../../Assests/project_eight.png"
+import projectNine from "../../Assests/project-nine.png"
+
 
 
 const AllProject = () => {
@@ -62,26 +65,18 @@ const AllProject = () => {
     },
     {
       id: 8,
-      projectImg: projectTwo,
-      projectName: "Bansal College",
-      projectDescription: "Engineering College",
-      projectLink : "https://www.bansaliet.in/"
-
+      projectImg: projectEight,
+      projectName: "Dashboard sample",
+      projectDescription: "A sample of dashboard panel build on React Js",
+      projectLink : "https://dashboard-sample-azure.vercel.app/"
     },
     {
       id: 9,
-      projectImg: projectThree,
-      projectName: "Health Foundation",
-      projectDescription: "NGO for women and migratory workers",
-      projectLink : "https://healthvalueshowbiz.in/"
+      projectImg: projectNine,
+      projectName: "Lucknow smart city",
+      projectDescription: "Worked on website designing",
+      projectLink : "https://www.lucknowsmartcity.com/"
     },
-    {
-      id: 10,
-      projectImg: projectFour,
-      projectName: "Bazoob",
-      projectDescription: "Influencer marketing Service",
-      projectLink : "https://bazoob.com/home"
-    },,
   ]
 
 

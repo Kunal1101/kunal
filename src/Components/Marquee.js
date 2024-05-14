@@ -1,17 +1,20 @@
 import React from 'react';
-import bootstrap_logo from '../Assests/bootstrap_logo.png';
-import html_logo from '../Assests/html_logo.png'
-import css_logo  from '../Assests/css_logo.jpg'
-import wordpress_logo from '../Assests/wordpress_logo.png'
-import javascript_logo from '../Assests/javascript_logo.png'
-import jquery_logo from '../Assests/jQuery_logo.png'
-import react_logo from '../Assests/react_logo.png'
+import bootstrap_logo from '../Assests/bootstrap.png';
+import html_logo from '../Assests/html-5.png'
+import css_logo  from '../Assests/css-3.png'
+import wordpress_logo from '../Assests/wordpress.png'
+import javascript_logo from '../Assests/java-script.png'
+import jquery_logo from '../Assests/social.png'
+import react_logo from '../Assests/atom.png'
+import figma_logo from '../Assests/figma.png'
+import github_logo from '../Assests/github.png'
+import vscode_logo from '../Assests/windows.png'
 
 
 function Marquee() {
   return (
     <>
-      <marquee width="100%" className="mt-3" direction="left" height="100px">
+      <marquee width="100%" className="mt-5" direction="left" height="70px">
         <img src={bootstrap_logo} alt='' className="marquee_img" />
         <img src={html_logo} alt='' className="marquee_img" />
         <img src={css_logo} alt='' className="marquee_img" />
@@ -19,6 +22,10 @@ function Marquee() {
         <img src={javascript_logo} alt='' className="marquee_img" />
         <img src={jquery_logo} alt='' className="marquee_img" />
         <img src={react_logo} alt='' className="marquee_img" />
+        <img src={figma_logo} alt='' className="marquee_img" />
+        <img src={github_logo} alt='' className="marquee_img" />
+        <img src={vscode_logo} alt='' className="marquee_img" />
+
       </marquee>
     </>
   )

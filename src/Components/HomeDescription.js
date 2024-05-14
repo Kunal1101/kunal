@@ -8,7 +8,7 @@ function HomeDescription() {
         <img src={profile_pic} alt='profile_pic' className='img-fluid profile_pic' />
         <div>
           <h1>Kunal Mishra</h1>
-          <a href='/' target='_blank' rel='noopener' alt="@kunalmishra" title='Kunal Mishra'>@kunalmishra</a>
+          <a href='https://www.linkedin.com/in/kunal-mishra-715386183' target='_blank' rel='noopener' alt="@kunalmishra" title='Kunal Mishra'>@kunalmishra</a>
         </div>
       </div>
       <p className='mt-4 text-white'>I'm a passionate front-end developer dedicated to crafting captivating digital experiences. With a keen eye for design and a commitment to clean, efficient code. From responsive websites to interactive web applications, I thrive on transforming ideas into engaging realities.</p>

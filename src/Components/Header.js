@@ -22,7 +22,7 @@ function Header() {
                 <a className="nav-link active text-white" href="/work">Work</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="/">About</a>
+                <a className="nav-link text-white" href="/about">About</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-white" href="/">Tech Stack</a>
@@ -32,13 +32,13 @@ function Header() {
               </li>
             </ul>
             <div className='icons-div d-flex gap-3'>
-              <a className="text-white" href="/">
+              <a className="text-white" href="https://www.instagram.com/mishra__11/?igsh=MWI4emg1Z2lyNWtwNQ%3D%3D&utm_source=qr">
                 <AiOutlineInstagram />
               </a>
-              <a className="text-white" href="/">
+              <a className="text-white" href="https://github.com/Kunal1101">
                 <AiOutlineGithub />
               </a>
-              <a className="text-white" href="/">
+              <a className="text-white" href="https://www.linkedin.com/in/kunal-mishra-715386183">
                 <BsLinkedin />
               </a>
             </div>
