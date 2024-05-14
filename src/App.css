@@ -79,7 +79,6 @@ marquee .marquee_img {
   width: 20px;
 }
 .project-card {
-  padding: 10px;
   border-radius: 20px;
 }
 .project-card button {
@@ -93,6 +92,8 @@ marquee .marquee_img {
 
 .project-card .project_des {
   opacity: .6;
+  font-size: 14px;
+  line-height: 26px;
 }
 .userInputBox {
   background-size: contain;
@@ -113,7 +114,7 @@ marquee .marquee_img {
 .socialLinks svg {
   color: var(--white-color);
 }
-.socialLinks span {
+.socialLinks {
   background-color: #566cec;
   background-image: linear-gradient(90.42deg,#4AB1F1 0.58%,#566CEC 37.22%,#D749AF 73.87%,#FF7C51 112.26%);
   background-size: 100%;
@@ -138,6 +139,7 @@ marquee .marquee_img {
   position: relative;
   background-image: linear-gradient(73.19deg,#DC79FF 0%,#256BFA 95.06%);
 }
+
 /* Media query */
 @media screen and (max-width: 575px) {
   .userInputBox {
@@ -153,10 +155,6 @@ marquee .marquee_img {
   .project-card img {
     width: 100px;
     height: 100px;
-  }
-  .project-card .project_des {
-    font-size: 14px;
-    line-height: 24px;
   }
 }
 @media screen and (min-width: 576px) {
@@ -180,10 +178,10 @@ marquee .marquee_img {
 @media screen and (max-width: 767px) {
   .navbar  {
     margin-bottom: 50px;
-    width: 90%;
+    width: 96%;
   }
   .container-custom {
-    padding: 0px 20px;
+    padding: 0px 20px 30px;
   }
   .overflow-md {
     overflow-x: scroll;
@@ -198,11 +196,14 @@ marquee .marquee_img {
   .project-card {
     background: var(--hover-bg);
     width: 100%;
+    margin-bottom: 6px;
+    padding: 15px 12px;
   }
 }
 @media screen and (min-width: 768px) {
   .container-custom {
     width: 710px;
+    padding-bottom: 30px;
   }
   .project-card::before {
     content: "";
@@ -232,6 +233,7 @@ marquee .marquee_img {
   }
   .project-card {
     width: min-content;
+    padding: 10px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -241,11 +243,11 @@ marquee .marquee_img {
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .navbar {
-    width: 55%;
+    width: 75%;
   }
 }
 @media screen and (min-width:1200px) {
   .navbar {
-    width: 45%;
+    width: 47%;
   } 
 }

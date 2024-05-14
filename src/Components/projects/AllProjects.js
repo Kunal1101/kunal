@@ -5,10 +5,10 @@ import projectThree from "../../Assests/project_three.png"
 import projectFour from "../../Assests/project_four.png"
 import projectFive from "../../Assests/project_five.png"
 import projectSix from "../../Assests/project_six.png"
+import projectSeven from "../../Assests/project_seven.png"
 
 
-
-const CurrentProjects = () => {
+const AllProject = () => {
  const  items = [
     {
       id: 1,
@@ -53,6 +53,35 @@ const CurrentProjects = () => {
       projectDescription: "Tailored Resort Retreats Online",
       projectLink : "https://hotelaarya.in/"
     },
+    {
+      id: 7,
+      projectImg: projectSeven,
+      projectName: "Magenative",
+      projectDescription: "Goal is to help merchants enable mobile commerce",
+      projectLink : "https://magenative.com/"
+    },
+    {
+      id: 8,
+      projectImg: projectTwo,
+      projectName: "Bansal College",
+      projectDescription: "Engineering College",
+      projectLink : "https://www.bansaliet.in/"
+
+    },
+    {
+      id: 9,
+      projectImg: projectThree,
+      projectName: "Health Foundation",
+      projectDescription: "NGO for women and migratory workers",
+      projectLink : "https://healthvalueshowbiz.in/"
+    },
+    {
+      id: 10,
+      projectImg: projectFour,
+      projectName: "Bazoob",
+      projectDescription: "Influencer marketing Service",
+      projectLink : "https://bazoob.com/home"
+    },,
   ]
 
 
@@ -61,7 +90,7 @@ const CurrentProjects = () => {
       <div>
         <div className='homeProjects mt-3 mb-4 d-flex align-items-center justify-content-between'>
           <span className="d-block">Projects</span>
-          <a href='/work' title='All Projects' alt="All Projects">All Projects</a>
+          {/* <a href='/' title='All Projects' alt="All Projects">All Projects</a> */}
         </div>
         <div className='d-flex flex-wrap gap-3'>
           {
@@ -82,4 +111,4 @@ const CurrentProjects = () => {
   )
 }
 
-export default CurrentProjects
+export default AllProject

@@ -1,21 +1,28 @@
+import { Suspense } from 'react';
 import './App.css';
-import CurrentProjects from './Components/projects/CurrentProjects';
 import Header from './Components/Header';
-import HomeDescription from './Components/HomeDescription';
-import Marquee from './Components/Marquee';
-import UserInputBox from './Components/UserInputBox';
+import{
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom"
+import HomePage from './Components/pages/HomePage';
+import WorkPage from './Components/pages/WorkPage';
+
 
 const App = () => {
   return (
-    <main className='main-container position-relative'>
-      <Header />
-      <div className='container-custom mx-auto'>
-        <HomeDescription />
-        {/* <Marquee /> */}
-        <CurrentProjects />
-        <UserInputBox />
-      </div>
-    </main>
+      <main className='main-container position-relative'>
+        <Header />
+        <div className='container-custom mx-auto'>
+        <Router>
+            <Routes>
+              <Route exact path="/" element={<HomePage/>}/>
+              <Route exact path="/work" element={<WorkPage/>}/>
+            </Routes>
+        </Router>
+        </div>
+      </main>
   );
 }
 
