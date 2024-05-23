@@ -93,7 +93,7 @@ const AllProject = () => {
                 <a className='project-card position-relative d-flex flex-md-column gap-2'  key={item.id} onClick={() => {  window.location.href = (item.projectLink)}} target='_blank' rel='noopener norefer'>
                   <img src={item.projectImg} alt='' className='projectImg d-block' />
                   <div>
-                    <span className='text-white mb-2 d-block'>{item.projectName}</span>
+                    <span className='text-white mb-2 d-block' style={{fontWeight: '600'}}>{item.projectName}</span>
                     <p  className='text-white project_des'>{item.projectDescription}</p>
                   </div>
                 </a>

@@ -16,20 +16,20 @@ function Header() {
               <GiHamburgerMenu className='text-white'/>
             </span>
           </button>
-          <div className="collapse navbar-collapse justify-content-sm-around" id="navbarSupportedContent">
-            <ul className="navbar-nav">
+          <div className="collapse navbar-collapse justify-content-sm-end" id="navbarSupportedContent">
+            <ul className="navbar-nav me-4">
               <li className="nav-item">
                 <a className="nav-link active text-white" href="/work">Work</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-white" href="/about">About</a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link text-white" href="/">Tech Stack</a>
-              </li>
-              <li className="nav-item">
+              </li> */}
+              {/* <li className="nav-item">
                 <a className="nav-link text-white" href="/">Links</a>
-              </li>
+              </li> */}
             </ul>
             <div className='icons-div d-flex gap-3'>
               <a className="text-white" href="https://www.instagram.com/mishra__11/?igsh=MWI4emg1Z2lyNWtwNQ%3D%3D&utm_source=qr">

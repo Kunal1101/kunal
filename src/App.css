@@ -200,6 +200,7 @@ marquee .marquee_img {
 .aboutMeText span {
   font-weight: 700;
 }
+
 /* Media query */
 @media screen and (max-width: 575px) {
   .userInputBox {
@@ -247,7 +248,7 @@ marquee .marquee_img {
     overflow-x: scroll;
   }
   .userInputBox {
-    padding: 30px 16px 20px;
+    padding: 30px 16px;
     margin-top: 40px;
   }
   .userInputBox h2 {
@@ -282,7 +283,7 @@ marquee .marquee_img {
     transform: scale(1);
   }
   .userInputBox {
-    padding: 40px 30px 20px;
+    padding: 40px 30px;
     margin-top: 80px;
   }
   .navbar  {
