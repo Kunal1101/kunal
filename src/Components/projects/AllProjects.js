@@ -8,7 +8,7 @@ import projectSix from "../../Assests/project_six.png"
 import projectSeven from "../../Assests/project_seven.png"
 import projectEight from "../../Assests/project_eight.png"
 import projectNine from "../../Assests/project-nine.png"
-
+import projectTen from "../../Assests/projectTen.png"
 
 
 const AllProject = () => {
@@ -77,6 +77,13 @@ const AllProject = () => {
       projectDescription: "Worked on website designing",
       projectLink : "https://www.lucknowsmartcity.com/"
     },
+    {
+      id: 10,
+      projectImg: projectTen,
+      projectName: "UltraCap Trading",
+      projectDescription: "Designed multiple components and page layouts",
+      projectLink : "https://ultracaptrading.com/"
+    }
   ]
 
 
@@ -85,7 +92,6 @@ const AllProject = () => {
       <div>
         <div className='homeProjects mt-3 mb-4 d-flex align-items-center justify-content-between'>
           <span className="d-block">Projects</span>
-          {/* <a href='/' title='All Projects' alt="All Projects">All Projects</a> */}
         </div>
         <div className='d-flex flex-wrap gap-3'>
           {
