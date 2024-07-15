@@ -25,7 +25,6 @@ function Marquee() {
         <img src={figma_logo} alt='' className="marquee_img" />
         <img src={github_logo} alt='' className="marquee_img" />
         <img src={vscode_logo} alt='' className="marquee_img" />
-
       </marquee>
     </>
   )
