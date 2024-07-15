@@ -7,7 +7,7 @@ function HomeDescription() {
       <div className='d-flex gap-4 align-items-center'>
         <img src={profile_pic} alt='profile_pic' className='img-fluid profile_pic' />
         <div>
-          <h1>Kunal Mishra</h1>
+          <h1 className='animate__animated animate__rubberBand'>Kunal Mishra</h1>
           <a href='https://www.linkedin.com/in/kunal-mishra-715386183' target='_blank' rel='noopener' alt="@kunalmishra" title='Kunal Mishra'>@kunalmishra</a>
         </div>
       </div>
